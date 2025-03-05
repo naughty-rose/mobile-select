@@ -1,8 +1,25 @@
 {
   "name": "mobile-select",
-  "version": "0.0.0",
+  "version": "1.0.0-beta.1",
   "private": true,
   "type": "module",
+  "description": "A mobile select component for Vue.js",
+  "keywords": [
+    "mobile",
+    "select",
+    "vue3",
+    "vue-select",
+    "mobile-select"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./style.css": "./dist/index.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",

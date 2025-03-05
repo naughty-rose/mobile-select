@@ -118,3 +118,5 @@ const ClickOutside: ObjectDirective = {
 }
 
 export default ClickOutside
+
+export { ClickOutside }

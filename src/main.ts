@@ -1,14 +1,11 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import mobileSelect from './components/index.vue'
 
-import ClickOutside from './components/click-outside'
+export { mobileSelect }
+export default mobileSelect
 
-import mobileSelect from './components/mobile-select.vue'
+// import { createApp } from 'vue'
+// import App from './App.vue'
 
-const app = createApp(App)
-
-app.directive('click-outside', ClickOutside)
-
-app.mount('#app')
+// createApp(App).mount('#app')

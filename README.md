@@ -1,39 +1,29 @@
-# mobile-select
+# mobileSelect
 
-This template should help get you started developing with Vue 3 in Vite.
+这是一个基于vue3的移动端下拉选择组件,它兼容移动端和pc端，支持多选，单选，清空选项，自定义选项展示，无选项时展示。
 
-## Recommended IDE Setup
+## Props
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+| Name               | Description          | Type                    | Required | Default |
+| ------------------ | -------------------- | ----------------------- | -------- | ------- |
+| size               | select的高度，       | `number`                | `false`  | 30      |
+| modelValue/v-model | 绑定值               | `string、number、array` | `false`  | ——      |
+| multiple           | 是否多选             | `boolean`               | `false`  | false   |
+| clearable          | 是否可以清空选项     | `boolean`               | `false`  | false   |
+| activeColor        | 下拉选项选择时的颜色 | `string`                | `false`  | #3875C6 |
+| options            | select的下拉选项     | `array`                 | `false`  | []      |
+| border             | select的是否有边框   | `boolean`               | `false`  | true    |
 
-## Type Support for `.vue` Imports in TS
+## Events
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+| Event Name | Description                              | Parameters   |
+| ---------- | ---------------------------------------- | ------------ |
+| change     | 选中值发生变化时触发                     | 目前的选中值 |
+| clear      | 可清空的单选模式下用户点击清空按钮时触发 | ——           |
 
-## Customize configuration
+## Slots
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+| Event Name | Description        |
+| ---------- | ------------------ |
+| option     | 自定义下拉选项展示 |
+| empty      | 无选项时的列表     |
