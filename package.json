@@ -56,5 +56,9 @@
     "vite": "^6.1.0",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vue-tsc": "^2.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naughty-rose/mobile-select.git"
   }
 }
