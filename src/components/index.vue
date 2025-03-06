@@ -305,6 +305,7 @@ const handleClear = () => {
 .mobile-select .select-input {
   flex: 1;
   display: block;
+  width: 100%;
   margin-right: 10px;
   font-size: v-bind('props.size + "px"');
   height: v-bind('props.height + "px"');
