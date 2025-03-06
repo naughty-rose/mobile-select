@@ -1,6 +1,7 @@
 # mobileSelect
 
 这是一个基于vue3的移动端下拉选择组件,它兼容移动端和pc端，支持多选，单选，清空选项，自定义选项展示，无选项时展示。
+样式和PC端的select 样式基本一致，但是样式的细节上做了一些优化，比如select的边框，select的选中项的背景色，select的选中项的边框，select的选中项的文字颜色等。
 
 ## Props
 
@@ -27,3 +28,12 @@
 | ---------- | ------------------ |
 | option     | 自定义下拉选项展示 |
 | empty      | 无选项时的列表     |
+
+## Example
+
+import MobileSelect from 'mobile-select-mini'
+import 'mobile-select-mini/dist/index.css'
+app.component('MobileSelect', MobileSelect)
+<template>
+<MobileSelect v-model='type'></MobileSelect>
+</template>
