@@ -14,6 +14,7 @@
 | activeColor        | 下拉选项选择时的颜色 | `string`                | `false`  | #3875C6 |
 | options            | select的下拉选项     | `array`                 | `false`  | []      |
 | border             | select的是否有边框   | `boolean`               | `false`  | true    |
+| separator          | 用于分隔多选项的字符 | `string`                | `false`  | ,       |
 
 ## Events
 

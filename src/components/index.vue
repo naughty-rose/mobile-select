@@ -126,6 +126,7 @@ interface Props {
   offset: number
   activeColor: string
   border: boolean
+  separator: string
 }
 
 type val = string | number | Array<string | number> | undefined
@@ -144,6 +145,7 @@ const props = withDefaults(defineProps<Props>(), {
   offset: 10,
   activeColor: '#3875C6',
   border: true,
+  separator: ',',
 })
 
 // const props = defineProps({
@@ -230,7 +232,7 @@ const text = computed(() => {
         return Array.isArray(modelValue.value) && modelValue.value.includes(v.value)
       })
       .map((item: Option) => item.label)
-      .join(',')
+      .join(props.separator)
   } else {
     return (
       props.options.find((v: Option) => {
